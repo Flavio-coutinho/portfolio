@@ -237,7 +237,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner {
   margin-top: 0;
   padding: 260px 0 100px 0;
-  background-image: url('./assets/img/banner-bg.png');
+  background-image: url('./assets/img/banner.jpg');
+  transition: 20s;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -259,6 +260,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   line-height: 1;
   margin-bottom: 20px;
   display: block;
+  color: #fff;
 }
 .banner p {
   color: #B8B8B8;
