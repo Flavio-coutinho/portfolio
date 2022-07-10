@@ -6,7 +6,7 @@ import headerImg from "../assets/img/header-img.svg";
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Software Developer🚀"];
+    const toRotate = ["Software Developer⚡"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -17,6 +17,7 @@ export const Banner = () => {
         },delta)
 
         return () => { clearInterval(ticker) };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text])
 
     const tick = () => {
@@ -45,13 +46,13 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Bem Vindo ao meu Portfolio</span>
+                        <span className="tagline">Bem Vindo ao meu Portfolio!</span>
                         <h1>{`Sou o Flávio Coutinho, `} <span className="wrap">{text}</span></h1>
                         <p>PHP é podre, Flutter é Wordpress Mobile, Microsoft melhor empresa do mundo, JavaScript é podre</p>
                         <button onAbort={() => console.log('connect')}>Entre em contacto <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" />
+                        <img src={headerImg} alt="Header Img" className="img-header"/>
                     </Col>
                 </Row>
             </Container>
