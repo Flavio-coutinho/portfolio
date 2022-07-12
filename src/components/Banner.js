@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
@@ -14,10 +13,10 @@ export const Banner = () => {
     useEffect(() => {
         let ticker = setInterval(() => {
             tick();
-        },delta)
+        }, delta)
 
         return () => { clearInterval(ticker) };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text])
 
     const tick = () => {
@@ -34,12 +33,12 @@ export const Banner = () => {
         if (!isDeleting && updatedText === fullText) {
             setIsDeleting(true)
             setDelta(period);
-        } else if(isDeleting && updatedText === '') {
+        } else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
             setDelta(500);
+        }
     }
-}
 
     return (
         <section className="banner" id="home">
@@ -48,11 +47,10 @@ export const Banner = () => {
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Bem Vindo ao meu Portfolio!</span>
                         <h1>{`Sou o Flávio Coutinho, `} <span className="wrap">{text}</span></h1>
-                        <p>PHP é podre, Flutter é Wordpress Mobile, Microsoft melhor empresa do mundo, JavaScript é podre</p>
-                        <button onAbort={() => console.log('connect')}>Entre em contacto <ArrowRightCircle size={25} /></button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aliquam inventore dolor. Et error harum voluptates dolorum perferendis impedit voluptate expedita, possimus a, adipisci architecto sunt ducimus nobis pariatur eveniet.</p>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header Img" className="img-header"/>
+                        <img src={headerImg} alt="Header Img" className="img-header" />
                     </Col>
                 </Row>
             </Container>

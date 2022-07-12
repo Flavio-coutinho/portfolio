@@ -4,7 +4,7 @@ import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from '../assets/img/logo.png';
 import linkedin from '../assets/img/linkedin.svg';
 import twitter from '../assets/img/twitter.svg';
-import instagram from '../assets/img/instagram.svg';
+import github from '../assets/img/github.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
@@ -44,11 +44,10 @@ export const NavBar = () => {
                     </Nav>
                     <span className="navbar-text">
                         <div className="social-icon">
-                            <a href="#"><img src={linkedin} alt="" /> </a>
-                            <a href="#"><img src={twitter} alt="" /> </a>
-                            <a href="#"><img src={instagram} alt="" /> </a>
+                            <a href="https://www.linkedin.com/in/fl%C3%A1vio-coutinho-76b7361a9/"><img src={linkedin} alt="" /> </a>
+                            <a href="https://twitter.com/Flavio_Hn"><img src={twitter} alt="" /> </a>
+                            <a href="https://github.com/Flavio-coutinho"><img src={github} alt="" /> </a>
                         </div>
-                        {/* <button className="vvd" onClick={() => console.log('connect')}><span>Entre em contacto</span></button> */}
                     </span>
                 </Navbar.Collapse>
             </Container>
