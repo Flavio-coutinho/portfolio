@@ -1,6 +1,6 @@
 # Portfolio
 
-# Use e abuse do Código
+# Use e abuse do Código deste portfolio
 
 ## Banner
 
